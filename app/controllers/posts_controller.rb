@@ -1,5 +1,6 @@
 class PostsController < ApplicationController
 
+
 	def index
 		@posts = Post.all.order('created_at DESC')
 	end
@@ -16,6 +17,11 @@ class PostsController < ApplicationController
 
 	def show
 		@post = Post.find(params[:id])
+	end
+
+	def edit
+		@post = Post.find(params[:id])
+		
 	end
 
 	private
