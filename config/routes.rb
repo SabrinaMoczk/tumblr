@@ -6,5 +6,7 @@ Rails.application.routes.draw do
   root "posts#index"
   # get "posts/edit/:id" => "posts#edit"
   # post "posts/:id" => "posts#update"
+
+  get '/about', to: 'pages#about'
 end
 
