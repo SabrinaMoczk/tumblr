@@ -21,7 +21,7 @@ class PostsController < ApplicationController
 
 	def edit
 		@post = Post.find(params[:id])
-		
+
 	end
 
 	private
@@ -30,3 +30,4 @@ class PostsController < ApplicationController
 			params.require(:post).permit(:title, :body)
 		end
 end
+
